@@ -5,7 +5,7 @@
 
 int main( void )
   {
-    printf( "My userid is: %d\n", getuid() );
-    printf( "My grouprid is: %d\n", getgid() );
+    printf( "My user id is: %d\n", getuid() );
+    printf( "My group id is: %d\n", getgid() );
     return 0;
   }
