@@ -29,10 +29,11 @@ if ((fd = open(name, O_RDONLY)) < 0) {
 
     printf("Second program exit, string from fifo: %s\n", resstring);
 
-   
+    
     if (close(fd) < 0) {
       printf("child: Can\'t close FIFO\n"); 
       exit(-1);
     }
+    // Работа первой программы одновременно завершается.
 
 }
